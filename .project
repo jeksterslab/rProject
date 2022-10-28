@@ -1,0 +1,18 @@
+project <- "rProject"
+pkg_cran <- c(
+
+)
+
+pkg_github <- c(
+
+)
+
+pkg_ver <- c(
+
+)
+
+ver <- c(
+
+)
+
+ignore <- NULL

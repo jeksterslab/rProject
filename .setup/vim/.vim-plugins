@@ -1,0 +1,14 @@
+#!/bin/bash
+
+mkdir -p ~/.vim/pack/plugins/start
+mkdir -p ~/.vim/pack/themes/start
+cd ~/.vim/pack/plugins/start
+
+# vim-slime
+rm -rf vim-slime
+git clone https://github.com/jpalardy/vim-slime.git
+
+# dracula
+cd ~/.vim/pack/themes/start
+rm -rf dracula
+git clone https://github.com/dracula/vim.git dracula

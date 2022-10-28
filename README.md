@@ -1,22 +1,11 @@
----
-title: "rProject"
-author: "Ivan Jacob Agaloos Pesigan"
-date: "`r Sys.Date()`"
-output: github_document
----
+rProject
+================
+Ivan Jacob Agaloos Pesigan
+2022-10-28
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "man/figures/README-",
-  out.width = "100%"
-)
-```
-
 <!-- badges: start -->
+
 [![R-CMD-check](https://github.com/jeksterslab/rProject/workflows/R-CMD-check/badge.svg)](https://github.com/jeksterslab/rProject/actions)
 [![test-coverage](https://github.com/jeksterslab/rProject/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/jeksterslab/rProject/actions/workflows/test-coverage.yaml)
 [![lint](https://github.com/jeksterslab/rProject/actions/workflows/lint.yaml/badge.svg)](https://github.com/jeksterslab/rProject/actions/workflows/lint.yaml)
@@ -29,18 +18,15 @@ A collection of functions to setup R projects.
 
 ## Installation
 
-You can install the released version of
-`rProject`
-from
+You can install the released version of `rProject` from
 [GitHub](https://github.com/jeksterslab/rProject) with:
 
-```r
+``` r
 if (!require("remotes")) install.packages("remotes")
 remotes::install_github("jeksterslab/rProject")
 ```
 
 ## More Information
 
-See
-[GitHub Pages](https://jeksterslab.github.io/rProject/index.html)
+See [GitHub Pages](https://jeksterslab.github.io/rProject/index.html)
 for package documentation.
