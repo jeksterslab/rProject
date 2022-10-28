@@ -4,7 +4,7 @@
 \alias{Environment}
 \title{Setup \code{.Renviron}}
 \usage{
-Environment(path, project, secrets)
+Environment(path, project, tokens)
 }
 \arguments{
 \item{path}{Character string.
@@ -13,7 +13,7 @@ Project path.}
 \item{project}{Character string.
 Project name.}
 
-\item{secrets}{Named vector of tokens.}
+\item{tokens}{Named vector of tokens.}
 }
 \description{
 Setup \code{.Renviron}

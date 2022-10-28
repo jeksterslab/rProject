@@ -55,12 +55,10 @@ if (!("remotes" %in% pkg_installed)) {
     quiet = TRUE
   )
 }
-if (!("rProject" %in% pkg_installed)) {
-  remotes::install_github(
-    "jeksterslab/rProject",
-    quiet = TRUE
-  )
-}
+remotes::install_github(
+  "jeksterslab/rProject",
+  quiet = TRUE
+)
 rProject::Project(
   path = path
 )
@@ -71,7 +69,7 @@ rProject::Profile(
 rProject::Environment(
   path = path,
   project = project,
-  secrets = secrets
+  tokens = tokens
 )
 rProject::BuildIgnore(
   path = path,

@@ -4,11 +4,11 @@
 #'
 #' @inheritParams LibPaths
 #' @inheritParams EnvironmentProject
-#' @inheritParams EnvironmentSecrets
+#' @inheritParams EnvironmentTokens
 #' @export
 Environment <- function(path,
                         project,
-                        secrets) {
+                        tokens) {
   dot_rprofile_file <- file.path(
     path,
     ".Rprofile"
@@ -38,17 +38,17 @@ Environment <- function(path,
     dot_renviron_contents,
     "R_COMPLETION=TRUE"
   )
-  secrets <- EnvironmentSecrets(secrets = secrets)
-  secrets <- paste0(
-    names(secrets),
+  tokens <- EnvironmentTokens(tokens = tokens)
+  tokens <- paste0(
+    names(tokens),
     "=",
     "\"",
-    unname(secrets),
+    unname(tokens),
     "\""
   )
   dot_renviron_contents <- c(
     dot_renviron_contents,
-    secrets
+    tokens
   )
   project <- EnvironmentProject(project = project)
   project <- paste0(
