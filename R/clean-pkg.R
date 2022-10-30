@@ -1,5 +1,7 @@
 #' Clean R Packages
 #'
+#' Uninstall R packages with `priority = "NA"`.
+#'
 #' @author Ivan Jacob Agaloos Pesigan
 #'
 #' @inheritParams LibPaths

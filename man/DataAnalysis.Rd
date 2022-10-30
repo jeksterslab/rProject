@@ -11,10 +11,11 @@ DataAnalysis(path, clean = FALSE)
 Project path.}
 
 \item{clean}{Logical.
-Remove all \code{.Rds} files in \code{data-process} and \code{data-analysis} before running.}
+Remove all \code{.Rds} files in \code{data-process}
+and \code{data-analysis} before running.}
 }
 \description{
-Analyze data in \code{data-process} and store the results as \code{.Rds} files in \code{data-analysis} or \code{.rda} files in \code{data}.
+Execute R scripts in \code{data-analysis}.
 }
 \author{
 Ivan Jacob Agaloos Pesigan

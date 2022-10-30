@@ -8,6 +8,7 @@ PkgDevel <- function(path) {
   pkg <- c(
     "covr",
     "devtools",
+    "distro",
     "ggplot2",
     "knitr",
     "lintr",
@@ -39,7 +40,7 @@ PkgDevel <- function(path) {
       )
       utils::install.packages(
         pkg[i],
-        repos = c(REPO_NAME = Repository(path = path)),
+        repos = c(REPO_NAME = PkgRepo(path = path)),
         lib = lib,
         quiet = TRUE
       )

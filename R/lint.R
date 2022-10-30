@@ -11,7 +11,7 @@ Lint <- function(path) {
   if (!("lintr" %in% pkg_installed)) {
     utils::install.packages(
       "lintr",
-      repos = c(REPO_NAME = Repository(path = path)),
+      repos = c(REPO_NAME = PkgRepo(path = path)),
       lib = lib,
       quiet = TRUE
     )

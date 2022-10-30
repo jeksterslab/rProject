@@ -1,6 +1,4 @@
-#' Setup the Library Paths
-#'
-#' @author Ivan Jacob Agaloos Pesigan
+#' Add `.library` to Library Paths
 #'
 #' \itemize{
 #'   \item{creates a folder `.library` on the project path if it does not exist}
@@ -8,6 +6,8 @@
 #'   \item{adds `.library` to `.libPaths()`}
 #'   \item{sets `R_LIBS_USER` to `.library`}
 #' }
+#'
+#' @author Ivan Jacob Agaloos Pesigan
 #'
 #' @param path Character string.
 #'   Project path.

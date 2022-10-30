@@ -11,7 +11,7 @@ CleanPkg(path)
 Project path.}
 }
 \description{
-Clean R Packages
+Uninstall R packages with \code{priority = "NA"}.
 }
 \author{
 Ivan Jacob Agaloos Pesigan

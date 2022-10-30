@@ -1,4 +1,4 @@
-#' Install Development Packages from Github
+#' Install Development Packages from GitHub
 #'
 #' @author Ivan Jacob Agaloos Pesigan
 #'
@@ -11,7 +11,7 @@ PkgDevelGitHub <- function(path) {
   if (!("remotes" %in% pkg_installed)) {
     utils::install.packages(
       "remotes",
-      repos = c(REPO_NAME = Repository(path = path)),
+      repos = c(REPO_NAME = PkgRepo(path = path)),
       lib = lib,
       quiet = TRUE
     )

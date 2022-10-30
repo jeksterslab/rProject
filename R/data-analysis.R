@@ -1,12 +1,13 @@
 #' Data Analysis
 #'
-#' Analyze data in `data-process` and store the results as `.Rds` files in `data-analysis` or `.rda` files in `data`.
+#' Execute R scripts in `data-analysis`.
 #'
 #' @author Ivan Jacob Agaloos Pesigan
 #'
 #' @inheritParams LibPaths
 #' @param clean Logical.
-#'   Remove all `.Rds` files in `data-process` and `data-analysis` before running.
+#'   Remove all `.Rds` files in `data-process`
+#'   and `data-analysis` before running.
 #' @export
 DataAnalysis <- function(path,
                          clean = FALSE) {

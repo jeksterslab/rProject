@@ -14,7 +14,7 @@ PkgProjectGitHub <- function(path,
   if (!("remotes" %in% pkg_installed)) {
     utils::install.packages(
       "remotes",
-      repos = c(REPO_NAME = Repository(path = path)),
+      repos = c(REPO_NAME = PkgRepo(path = path)),
       lib = lib,
       quiet = TRUE
     )

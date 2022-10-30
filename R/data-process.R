@@ -1,6 +1,6 @@
 #' Process Data
 #'
-#' Process raw data in `data-raw` and store the results as `.Rds` files in `data-process`.
+#' Execute R scripts in `data-process`.
 #'
 #' @author Ivan Jacob Agaloos Pesigan
 #'

@@ -11,7 +11,7 @@ Project <- function(path) {
   if (!("rprojroot" %in% pkg_installed)) {
     utils::install.packages(
       "rprojroot",
-      repos = c(REPO_NAME = Repository(path = path)),
+      repos = c(REPO_NAME = PkgRepo(path = path)),
       lib = lib,
       quiet = TRUE
     )

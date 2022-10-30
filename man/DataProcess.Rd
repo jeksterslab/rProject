@@ -14,7 +14,7 @@ Project path.}
 Remove all \code{.Rds} files in \code{data-process} before running.}
 }
 \description{
-Process raw data in \code{data-raw} and store the results as \code{.Rds} files in \code{data-process}.
+Execute R scripts in \code{data-process}.
 }
 \author{
 Ivan Jacob Agaloos Pesigan

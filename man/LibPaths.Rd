@@ -2,7 +2,7 @@
 % Please edit documentation in R/lib-paths.R
 \name{LibPaths}
 \alias{LibPaths}
-\title{Setup the Library Paths}
+\title{Add \code{.library} to Library Paths}
 \usage{
 LibPaths(path)
 }
@@ -14,15 +14,13 @@ Project path.}
 Returns the path of \code{.library}.
 }
 \description{
-Setup the Library Paths
-}
-\author{
-Ivan Jacob Agaloos Pesigan
-
 \itemize{
 \item{creates a folder \code{.library} on the project path if it does not exist}
 \item{creates a \code{.gitignore} file inside \code{.library} if it does not exist}
 \item{adds \code{.library} to \code{.libPaths()}}
 \item{sets \code{R_LIBS_USER} to \code{.library}}
 }
+}
+\author{
+Ivan Jacob Agaloos Pesigan
 }

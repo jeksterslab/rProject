@@ -11,7 +11,7 @@ CleanTinyTex(path)
 Project path.}
 }
 \description{
-Clean \verb{~/.TinyTex}
+Uninstall \code{TinyTex}.
 }
 \author{
 Ivan Jacob Agaloos Pesigan

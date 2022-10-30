@@ -11,7 +11,7 @@ Clean(path)
 Project path.}
 }
 \description{
-Clean Files Generated on Build
+Delete all output files that are generated on automated build.
 }
 \author{
 Ivan Jacob Agaloos Pesigan

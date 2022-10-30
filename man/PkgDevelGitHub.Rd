@@ -2,7 +2,7 @@
 % Please edit documentation in R/pkg-devel-github.R
 \name{PkgDevelGitHub}
 \alias{PkgDevelGitHub}
-\title{Install Development Packages from Github}
+\title{Install Development Packages from GitHub}
 \usage{
 PkgDevelGitHub(path)
 }
@@ -11,7 +11,7 @@ PkgDevelGitHub(path)
 Project path.}
 }
 \description{
-Install Development Packages from Github
+Install Development Packages from GitHub
 }
 \author{
 Ivan Jacob Agaloos Pesigan

@@ -15,7 +15,7 @@ PkgProjectVersion <- function(path,
   lib <- LibPaths(path = path)
   installed <- utils::installed.packages()
   pkg_installed <- installed[, "Package"]
-  repos <- c(REPO_NAME = Repository(path = path))
+  repos <- c(REPO_NAME = PkgRepo(path = path))
   if (!("remotes" %in% pkg_installed)) {
     utils::install.packages(
       "remotes",

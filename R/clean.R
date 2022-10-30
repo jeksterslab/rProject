@@ -1,5 +1,7 @@
 #' Clean Files Generated on Build
 #'
+#' Delete all output files that are generated on automated build.
+#'
 #' @author Ivan Jacob Agaloos Pesigan
 #'
 #' @inheritParams LibPaths
@@ -70,6 +72,13 @@ Clean <- function(path) {
         "data-process"
       ),
       pattern = utils::glob2rx("*.Rds"),
+      full.names = TRUE
+    ),
+    list.files(
+      file.path(
+        path
+      ),
+      pattern = utils::glob2rx("*.pdf"),
       full.names = TRUE
     )
   )
