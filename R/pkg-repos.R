@@ -47,6 +47,22 @@ PkgRepo <- function(path) {
           )
         }
       }
+      if (tolower(distro$id) == "rocky") {
+        if (distro$short_version == "9") {
+          repos <- paste0(
+            linux,
+            "rhel9",
+            "/latest"
+          )
+        }
+        if (distro$short_version == "8") {
+          repos <- paste0(
+            linux,
+            "centos8",
+            "/latest"
+          )
+        }
+      }
       # populate the rest of the available repositories
       return(repos)
     }

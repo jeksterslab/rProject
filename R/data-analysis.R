@@ -19,7 +19,7 @@ DataAnalysis <- function(path,
     x <- list.files(
       path = file.path(
         path,
-        "data-analysis"
+        ".data-analysis"
       ),
       pattern = "\\.Rds$",
       full.names = TRUE,
@@ -33,7 +33,7 @@ DataAnalysis <- function(path,
   x <- list.files(
     path = file.path(
       path,
-      "data-analysis"
+      ".data-analysis"
     ),
     pattern = "\\.R$",
     full.names = TRUE,

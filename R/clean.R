@@ -20,6 +20,12 @@ Clean <- function(path) {
       "docs"
     )
   )
+  unlink(
+    file.path(
+      path,
+      "TEMPDIR"
+    )
+  )
   # delete files
   files <- file.path(
     path,

@@ -14,7 +14,7 @@ DataProcess <- function(path,
     x <- list.files(
       path = file.path(
         path,
-        "data-process"
+        ".data-process"
       ),
       pattern = "\\.Rds$",
       full.names = TRUE,
@@ -28,7 +28,7 @@ DataProcess <- function(path,
   x <- list.files(
     path = file.path(
       path,
-      "data-process"
+      ".data-process"
     ),
     pattern = "\\.R$",
     full.names = TRUE,
