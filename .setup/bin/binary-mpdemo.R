@@ -71,3 +71,4 @@ BinaryMpdemo <- function() {
     )
   )
 }
+BinaryMpdemo()

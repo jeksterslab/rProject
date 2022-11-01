@@ -11,6 +11,7 @@
 ^Makefile$
 ^README.md$
 ^README.Rmd$
+^\.data-.*$
 ^\.Rproj\.user$
 ^\.covrignore$
 ^\.git.*$
@@ -19,7 +20,7 @@
 ^\.project$
 ^\.secrets$
 ^\.setup$
-^data-.*$
+^\.sim$
 ^docs$
 ^latex.*$
 ^make.*$
