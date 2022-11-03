@@ -2,14 +2,14 @@
 
 all: build latex
 
-project:
-	@echo Building project...
-	@Rscript make-project.R ${PWD}
-
 term:
 	@echo Building .bashrc and .vimrc...
 	@(cd .setup/bash && make)
 	@(cd .setup/vim && make)
+
+project:
+	@echo Building project...
+	@Rscript make-project.R ${PWD}
 
 pkg:
 	@echo Installing packages...
@@ -31,7 +31,17 @@ cleantinytex:
 	@echo Cleaning TinyTex...
 	@Rscript -e "rProject::CleanTinyTex(\"${PWD}\")"
 
-build: term project clean pkg
+coverage:
+	@echo Code coverage...
+	@Rscript -e "rProject::Coverage(\"${PWD}\")"
+
+lint:
+	@echo Styling...
+	@Rscript -e "rProject::Style(\"${PWD}\")"
+	@echo Linting...
+	@Rscript -e "rProject::Lint(\"${PWD}\")"
+
+build: project clean pkg
 	@echo Installing TinyTex...
 	@Rscript -e "rProject::TinyTex(\"${PWD}\", force = FALSE)"
 	@echo Styling...
@@ -52,16 +62,6 @@ build: term project clean pkg
 	@Rscript -e "rProject::Site(\"${PWD}\")"
 	@echo Building manual...
 	@Rscript -e "rProject::Manual(\"${PWD}\", project = Sys.getenv(\"PROJECT\"))"
-
-coverage:
-	@echo Code coverage...
-	@Rscript -e "rProject::Coverage(\"${PWD}\")"
-
-lint:
-	@echo Styling...
-	@Rscript -e "rProject::Style(\"${PWD}\")"
-	@echo Linting...
-	@Rscript -e "rProject::Lint(\"${PWD}\")"
 
 latex:
 	@Rscript -e "rProject::LatexMake(\"${PWD}\")"
