@@ -1,6 +1,6 @@
 #' Load R Scripts in `R`, `.setup/r-dependencies`, `.setup/r-miscellaneous`
 #'
-#' @param rproj_root Object.
+#' @param rproj Object.
 #'   Output of `rprojroot::is_rstudio_project`
 Load <- function(rproj) {
   # sources

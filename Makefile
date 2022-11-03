@@ -1,6 +1,6 @@
 .PHONY: all project term pkg tinytex clean cleanpkg cleantinytex build coverage lint
 
-all: build
+all: build latex
 
 project:
 	@echo Building project...
@@ -62,3 +62,6 @@ lint:
 	@Rscript -e "rProject::Style(\"${PWD}\")"
 	@echo Linting...
 	@Rscript -e "rProject::Lint(\"${PWD}\")"
+
+latex:
+	@Rscript -e "rProject::LatexMake(\"${PWD}\")"

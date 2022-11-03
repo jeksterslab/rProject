@@ -26,6 +26,7 @@ knitr::opts_chunk$set(
 ## Description
 
 A collection of functions to setup R projects.
+This package is intended for personal use only.
 
 ## Installation
 

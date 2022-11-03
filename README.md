@@ -1,7 +1,7 @@
 rProject
 ================
 Ivan Jacob Agaloos Pesigan
-2022-11-01
+2022-11-03
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 <!-- badges: start -->
@@ -14,7 +14,8 @@ Ivan Jacob Agaloos Pesigan
 
 ## Description
 
-A collection of functions to setup R projects.
+A collection of functions to setup R projects. This package is intended
+for personal use only.
 
 ## Installation
 

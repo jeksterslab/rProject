@@ -11,6 +11,12 @@ Clean <- function(path) {
   unlink(
     file.path(
       path,
+      "man"
+    )
+  )
+  unlink(
+    file.path(
+      path,
       "doc"
     )
   )
@@ -26,6 +32,13 @@ Clean <- function(path) {
       "TEMPDIR"
     )
   )
+  unlink(
+    file.path(
+      path,
+      "latex",
+      "pdf"
+    )
+  )
   # delete files
   files <- file.path(
     path,
@@ -39,25 +52,6 @@ Clean <- function(path) {
     files,
     list.files(
       file.path(
-        path,
-        "man"
-      ),
-      full.names = TRUE,
-      recursive = TRUE,
-      include.dirs = TRUE
-    ),
-    list.files(
-      file.path(
-        path,
-        "latex",
-        "pdf"
-      ),
-      full.names = TRUE,
-      recursive = TRUE,
-      include.dirs = TRUE
-    ),
-    list.files(
-      file.path(
         path
       ),
       pattern = utils::glob2rx("fig-vignettes-*"),
@@ -69,15 +63,6 @@ Clean <- function(path) {
         "vignettes"
       ),
       pattern = utils::glob2rx("fig-vignettes-*"),
-      full.names = TRUE
-    ),
-    list.files(
-      file.path(
-        path,
-        ".setup",
-        "data-process"
-      ),
-      pattern = utils::glob2rx("*.Rds"),
       full.names = TRUE
     ),
     list.files(

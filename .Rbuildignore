@@ -21,7 +21,11 @@
 ^\.secrets$
 ^\.setup$
 ^\.sim$
+^detritus$
 ^docs$
 ^latex.*$
 ^make.*$
 ^rProject.pdf$
+^rProject\.Rcheck$
+^rProject.*\.tar\.gz$
+^rProject.*\.tgz$
