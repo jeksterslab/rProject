@@ -49,6 +49,9 @@
     <loc>https://github.com/jeksterslab/rProject/reference/Dependencies.html</loc>
   </url>
   <url>
+    <loc>https://github.com/jeksterslab/rProject/reference/Detritus.html</loc>
+  </url>
+  <url>
     <loc>https://github.com/jeksterslab/rProject/reference/Environment.html</loc>
   </url>
   <url>
@@ -56,6 +59,15 @@
   </url>
   <url>
     <loc>https://github.com/jeksterslab/rProject/reference/EnvironmentTokens.html</loc>
+  </url>
+  <url>
+    <loc>https://github.com/jeksterslab/rProject/reference/LatexCompile.html</loc>
+  </url>
+  <url>
+    <loc>https://github.com/jeksterslab/rProject/reference/LatexKnit.html</loc>
+  </url>
+  <url>
+    <loc>https://github.com/jeksterslab/rProject/reference/LatexMake.html</loc>
   </url>
   <url>
     <loc>https://github.com/jeksterslab/rProject/reference/LibPaths.html</loc>
