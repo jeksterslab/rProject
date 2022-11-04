@@ -2,7 +2,7 @@ pandoc: 2.19.2
 pkgdown: 2.0.6
 pkgdown_sha: ~
 articles: {}
-last_built: 2022-11-03T19:27Z
+last_built: 2022-11-04T14:21Z
 urls:
   reference: https://github.com/jeksterslab/rProject/reference
   article: https://github.com/jeksterslab/rProject/articles
