@@ -1,5 +1,0 @@
-#!/bin/bash
-
-bash .vim-plugins > /dev/null 2>&1
-
-yes 2>/dev/null | cp -rf .vimrc ~
