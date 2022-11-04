@@ -65,7 +65,7 @@ make-*
 .project
 
 # sh
-*.sh
+.clone.sh
 
 # library
 .library
