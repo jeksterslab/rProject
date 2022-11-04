@@ -55,4 +55,19 @@ doc
 # detritus
 detritus
 
+# latex
+latexmkrc
+
+# make
+Makefile
+make-*
+.secrets
+.project
+
+# sh
+*.sh
+
+# library
+.library
+
 # etc
