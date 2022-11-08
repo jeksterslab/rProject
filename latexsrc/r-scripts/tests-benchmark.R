@@ -38,7 +38,6 @@ if (length(x) > 0) {
   rm(i)
 }
 rm(x)
-rm(Load)
 # run tests_benchmark
 lapply(
   X = rproj$find_file(

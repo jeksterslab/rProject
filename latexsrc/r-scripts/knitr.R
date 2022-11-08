@@ -69,7 +69,6 @@ if (length(x) > 0) {
 }
 rm(x)
 rm(
-  Load,
   KnitrOptionsDefault,
   KnitrOptionsCustom,
   rproj
