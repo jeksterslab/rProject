@@ -59,14 +59,6 @@ Clean <- function(path) {
     ),
     list.files(
       file.path(
-        path,
-        "vignettes"
-      ),
-      pattern = utils::glob2rx("fig-vignettes-*"),
-      full.names = TRUE
-    ),
-    list.files(
-      file.path(
         path
       ),
       pattern = utils::glob2rx("*.pdf"),
