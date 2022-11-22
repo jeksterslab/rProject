@@ -3,10 +3,17 @@ BinaryMpdemo <- function() {
   root <- rprojroot::is_rstudio_project
   run_sh <- FALSE
   run_r <- FALSE
-  mpdemo_from <- file.path(
+  bin <- file.path(
     Sys.getenv("HOME"),
     ".local",
-    "bin",
+    "bin"
+  )
+  dir.create(
+    bin,
+    showWarnings = FALSE
+  )
+  mpdemo_from <- file.path(
+    bin,
     "mpdemo"
   )
   mpdemo_to <- root$find_file(
@@ -41,9 +48,7 @@ BinaryMpdemo <- function() {
   if (run_r) {
     file.copy(
       from = file.path(
-        Sys.getenv("HOME"),
-        ".local",
-        "bin",
+        bin,
         "mpdemo"
       ),
       to = root$find_file(
